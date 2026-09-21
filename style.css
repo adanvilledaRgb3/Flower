@@ -1,0 +1,67 @@
+body {
+  background-color: #000000;
+  color: #ffffff;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* El contenedor que centra el botón */
+.contenedor-boton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000000;
+}
+.texto-arriba {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* El botón con la flor */
+.boton-cuadrado {
+  width: 120px;
+  height: 120px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #e02222;
+  font-weight: bold;
+
+  background-color: transparent;
+
+  background-image: url('flower.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Pantalla donde aparecerán las imágenes */
+#pantalla {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  overflow: hidden;
+  pointer-events: none;
+
+  z-index: 20;
+}
+
+/* Cada PNG */
+.bolita {
+  position: absolute;
+
+  width: 50px;
+  height: 50px;
+
+  object-fit: contain;
+}
